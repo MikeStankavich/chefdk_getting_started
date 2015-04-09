@@ -1,0 +1,18 @@
+---
+driver:
+  provider: parallels
+  name: vagrant
+  box: parallels/ubuntu-14.04
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+#  - name: centos-6.5
+
+suites:
+  - name: default
+    run_list:
+      - recipe[chefdk_getting_started::default]
+    attributes:
