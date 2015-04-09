@@ -6,3 +6,5 @@ description      'Installs/Configures chefdk_getting_started'
 long_description 'Installs/Configures chefdk_getting_started'
 version          '0.1.0'
 
+depends 'postgresql'
+
